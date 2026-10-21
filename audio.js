@@ -44,6 +44,22 @@ function alInteractuar() {
   document.addEventListener(ev, alInteractuar)
 );
 
+// Si hay un vídeo en la página, la música se pausa mientras se ve
+document.addEventListener(
+  "play",
+  (e) => {
+    if (e.target.tagName === "VIDEO") musica.pause();
+  },
+  true
+);
+document.addEventListener(
+  "pause",
+  (e) => {
+    if (e.target.tagName === "VIDEO") reproducir();
+  },
+  true
+);
+
 window.addEventListener("pagehide", () => {
   sessionStorage.setItem("musica-tiempo", musica.currentTime);
 });

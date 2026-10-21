@@ -323,6 +323,26 @@ h2 {
   text-decoration: underline;
 }
 
+/* Vídeo */
+.video-seccion {
+  text-align: center;
+}
+
+.video-seccion .texto {
+  margin: 0 auto 25px;
+}
+
+.video-seccion video {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  background: #20201e;
+  border: 2px solid #20201e;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #20201e;
+}
+
 /* Botón de música */
 .boton-musica {
   position: fixed;
@@ -350,6 +370,29 @@ h2 {
 
   .cabecera .container {
     justify-content: center;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 10px 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .filtros {
+    flex-wrap: wrap;
+  }
+
+  .pie .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .boton-musica {
+    right: 12px;
+    bottom: 12px;
   }
 
   .producto,
