@@ -400,3 +400,14 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Licencia en el pie */
+.licencia {
+  padding: 0 20px 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.licencia a {
+  text-decoration: underline;
+}
